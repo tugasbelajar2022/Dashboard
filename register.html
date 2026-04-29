@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Daftar Akun</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="login-bg">
+
+  <div class="login-box">
+    <h2>Daftar Akun</h2>
+
+    <form onsubmit="return registerUser()">
+      <input type="email" id="regEmail" placeholder="Email" required>
+
+      <div class="password-box">
+        <input
+          type="password"
+          id="regPassword"
+          placeholder="Password"
+          required
+        >
+        <span onclick="togglePassword('regPassword')">👁</span>
+      </div>
+
+      <button type="submit">Daftar</button>
+    </form>
+
+    <p style="margin-top:10px;">
+      Sudah punya akun? <a href="login.html">Login</a>
+    </p>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
+
